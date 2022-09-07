@@ -1,0 +1,388 @@
+// Override default variables before the import
+$body-bg: #fff;
+$enable-rounded: false;
+$theme-colors: (
+  "primary": #10306c,
+  "danger": #ff4136,
+);
+
+$btn-background: #b9d9ff;
+$btn-border: #fff;
+$btn-color: #10306c;
+$btn-padding-sides: 1.1rem;
+$btn-background-basic: #10306c;
+$btn-border-basic: #10306c;
+$btn-color-basic: #fff;
+$h3-color: #000;
+$font-primary: "Montserrat", sans-serif;
+
+@mixin button-variant($background, $border, $color, $padding) {
+  background-color: $btn-background;
+  border: 1px solid $btn-border;
+  color: $btn-color;
+  font-weight: bold;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  padding-right: $btn-padding-sides;
+  padding-left: $btn-padding-sides;
+
+  &:hover {
+    border: 1px solid $btn-background;
+    color: #fff;
+  }
+}
+
+.btn-primary {
+  &.cta {
+    @include button-variant(
+      $btn-background,
+      $btn-border,
+      $btn-color,
+      $btn-padding-sides
+    );
+  }
+}
+.btn-danger {
+      color: #fff !important;
+}
+
+@mixin button-variant-basic($background, $border, $color, $padding) {
+  background-color: $btn-background-basic;
+  border: 1px solid $btn-border-basic;
+  color: $btn-color-basic;
+  font-weight: bold;
+  padding: 0.5rem;
+  padding-right: $btn-padding-sides;
+  padding-left: $btn-padding-sides;
+
+  &:hover {
+    border: 1px solid #fff;
+    color: #10306c;
+    background-color: #b9d9ff;
+  }
+}
+
+.btn-primary {
+  &.basic {
+    @include button-variant-basic(
+      $btn-background,
+      $btn-border,
+      $btn-color,
+      $btn-padding-sides
+    );
+  }
+}
+
+@mixin header-variant($color, $font) {
+  color: $h3-color;
+  font-family: $font-primary;
+  font-weight: bold;
+}
+
+h3 {
+  &.basic {
+    @include header-variant($h3-color, $font-primary);
+  }
+}
+
+.custom_title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3rem;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+.custom_error {
+  font-size: 0.8rem;
+  color:#ff4136;
+  margin: 0;
+  height: 5px;
+}
+
+.custom_header {
+  background-color: #10306c;
+}
+
+.custom_subTitle {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 15px;
+}
+
+.custom_link {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.link_active {
+  color: #A5C0FA
+}
+
+.custom_heading {
+  font-size: 3.7rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: #10306c;
+}
+
+.custom_p {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.custom_card_title {
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  :hover {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.custom_bg {
+  background-image: url("../src/assets/test.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 4rem;
+}
+
+.custom_login_wrapper {
+ padding: 2rem;
+ background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.verticalDivider{
+  padding-top: 20px;
+  width: 3px;
+  margin: 10px;
+  border-top: 1px solid #10306c;
+}
+.paddingX0{
+  padding-left: 0px !important; 
+  padding-right: 0px !important;
+}
+.wNav{
+  text-decoration: none;
+}
+
+.activeNav{
+  font-weight: bold;
+  color: #10306c;
+}
+.darkerGray.darkerGray-secondary{
+  background: #D8D8D8;
+  border: none;
+}
+.darkerGray{
+  background: #D8D8D8;
+}
+.lightGray{
+  background: #F8F8F8;
+}
+.lightBlue{
+  background: #9fc0ff;
+}
+.darkBlue{
+  background: #93c2db;
+}
+
+.shadow{
+  box-shadow: 0px 10px 5px #000;
+}
+
+.white{
+  background: #fff;
+}
+.colorWhite{
+  color: #fff;
+}
+
+
+.icon-medium{
+  box-sizing: content-box;
+  height: 50px;
+  width: auto;
+}
+
+
+.width-1-1{
+  width: 100%;
+}
+.height-1-1{
+  height: 100%;
+}
+.height-1-2{
+  height: 50%;
+}
+
+.transparent-border {
+  border: solid transparent 3px !important;
+}
+
+
+
+
+
+
+
+
+
+.marketplaceMarker{
+  background: #9FC0FF;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+.resize-none{
+  resize: none;
+}
+
+
+
+[id].acc{
+  display: none;
+}
+[id].acc:checked+label{
+  background: #10306C;
+  color: #fff;
+}
+.labelColor{
+  font-size: 20px;
+  font-weight: 600;
+  color: #10306C;
+}
+.darkBlue{
+  background: #10306C;
+}
+
+
+
+
+.prev-blur{
+  transition: 0.2s;
+}
+.d-blurred{
+  filter: blur(2px);
+  opacity: .4
+}
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
+
+
+// Link decorations
+.linkStyle{
+  text-decoration: none;
+  color: #000;
+  &:hover{
+    color: #000;
+  }
+}
+.nav-link{
+  color: #000;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #000;
+}
+
+// Apartment info 
+.apartmentInfoNav{
+  text-decoration: none;
+  background: #D8D8D8;
+  display: inline-block;
+  color: #000;
+}
+
+.jumpToItem{
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  background: #D8D8D8;
+  &--active{
+    background: #747474;
+  }
+    
+}
+.jumpToLink{
+  text-decoration: none;
+  color: #000;
+  &:hover{
+    color: #000;
+  }
+}
+
+.squareBoxUnit{
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.lightBlue{
+  background: #9fc0ff;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #747474;
+}
+.nav-link:hover, .nav-link:focus {
+  color: #000;
+}
+
+.textLightBlue{
+  color:#9FC0FF
+}
+
+.textGrey{
+  color:#A3AFC4;
+  border-left: 2px solid #D8D8D9;
+  border-right: 2px solid #D8D8D9;
+  opacity: 1;
+}
+
+.textLightBlack{
+  color: #4A4A4A;
+}
+
+.bgDarkTextWhite{
+  background-color: #747474;
+  color: #fff;
+}

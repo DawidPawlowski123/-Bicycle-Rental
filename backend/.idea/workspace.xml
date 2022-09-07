@@ -36,8 +36,10 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Dawid/Desktop/zapas back main",
+    "last_opened_file_path": "C:/Users/Dawid/Desktop/Nowy folder (2)/-Bicycle-Rental-main/backend",
     "spring.configuration.checksum": "1bbd3095c021a429275db90201be2755"
   }
 }]]></component>
@@ -61,6 +63,7 @@
       <workItem from="1657446379053" duration="495000" />
       <workItem from="1657446891282" duration="328000" />
       <workItem from="1662541652726" duration="67000" />
+      <workItem from="1662544394849" duration="32000" />
     </task>
     <servers />
   </component>
